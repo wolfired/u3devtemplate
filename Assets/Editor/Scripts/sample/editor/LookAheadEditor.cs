@@ -4,20 +4,19 @@ using UnityEngine;
 namespace sample.editor
 {
     [CustomEditor(typeof(LookAhead))]
-    // [CanEditMultipleObjects]
+    [CanEditMultipleObjects]
     public class LookAheadEditor : Editor
     {
-        public SerializedProperty lookAhead;
+        public SerializedProperty direction;
         public void OnEnable()
         {
-            this.lookAhead = this.serializedObject.FindProperty("lookAhead");
-            Debug.Log(this.lookAhead);
+            this.direction = this.serializedObject.FindProperty("direction");
         }
 
         public override void OnInspectorGUI()
         {
             this.serializedObject.Update();
-            EditorGUILayout.PropertyField(this.lookAhead);
+            EditorGUILayout.PropertyField(this.direction);
             this.serializedObject.ApplyModifiedProperties();
         }
     }
