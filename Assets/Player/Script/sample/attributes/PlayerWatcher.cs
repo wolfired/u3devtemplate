@@ -14,11 +14,11 @@ namespace sample.attributes
     /// <para><c>OnRenderObject()</c>与其它渲染回调函数：当且只当场景窗口或游戏窗口发生重绘时才调用</para>
     /// </summary>
     [ExecuteInEditMode]
-    [AddComponentMenu("Custom/Watcher", 0)]
+    [AddComponentMenu("Custom/PlayerWatcher", 0)]
     [RequireComponent(typeof(SelfInfo))]
-    public class Watcher : MonoBehaviour
+    public class PlayerWatcher : MonoBehaviour
     {
-        private double timeMark = 0;
+        private double _time_mark = 0;
         public void Awake()
         {
             Debug.Log("I will awake in edit/play mode!");
@@ -26,11 +26,12 @@ namespace sample.attributes
 
         public void Update()
         {
-            if (4 <= Time.realtimeSinceStartup - this.timeMark)
+            if (60 > Time.realtimeSinceStartup - this._time_mark)
             {
-                this.timeMark = Time.realtimeSinceStartup;
-                Debug.Log("I will update in edit/play mode!");
+                return;
             }
+            _time_mark = Time.realtimeSinceStartup;
+            Debug.Log("I will update in edit/play mode!");
         }
 
         [GUITarget(0, 1, new int[] { 2 })]

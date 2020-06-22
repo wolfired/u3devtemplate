@@ -26,4 +26,12 @@ Unity根据脚本的存放目录，分四个独立阶段编译脚本。Unity为�
 | 3     | Assembly-CSharp                  | All other scripts that are not inside a folder called Editor.                                                                               |
 | 4     | Assembly-CSharp-Editor           | All remaining scripts (those that are inside a folder called Editor.)                                                                       |
 
-## TBC
+## [Some common types of Asset](https://docs.unity3d.com/2017.4/Documentation/Manual/ImportingAssets.html)
+
+* 图像文件
+* 3D模型文件
+* 音频文件
+
+## 类备注
+
+* `UnityWebRequest`：

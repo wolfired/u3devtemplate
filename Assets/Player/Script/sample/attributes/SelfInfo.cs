@@ -33,10 +33,10 @@ namespace sample.attributes
         [Header("我的邮箱", order = 0)]
         private string myEmail = "wjianl@qq.com";
 
-        [ContextMenu("Debug Log", false, 1000000)]
-        public void debugLog()
+        [ContextMenu("Print My Email", false, 1000000)]
+        public void printMyEmail()
         {
-            Debug.Log("组件的上下文菜单");
+            Debug.Log("My email is: " + myEmail);
         }
 
         private void resetMyName()
