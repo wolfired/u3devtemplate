@@ -55,6 +55,16 @@
 * `UnityEditor.EditorPrefs`
   保存/访问 __Unity Editor__ 的用户设置数据
 
+* `UnityEditor.EditorGUI`   
+
+* `UnityEditor.EditorGUILayout`   
+
+* `UnityEditor.SerializedProperty`
+
+* `UnityEditor.SerializedObject`
+
+* `UnityEditor.Editor` : `UnityEngine.ScriptableObject`
+
 ## UnityEngine
 
 ### Classes
@@ -173,6 +183,13 @@
 * `UnityEngine.Profiler`
   性能分析
 
+* `UnityEngine.UI.Graphic`
+  所有可视化UI组件的基类
+
+* `UnityEngine.UI.IMaterialModifier`
+
+* `UnityEngine.TrailRenderer`
+
 ### Interfaces
 
 * `UnityEngine.ICanvasRaycastFilter`
@@ -183,3 +200,9 @@
 
 * `UnityEngine.ILogger` : `ILogHandler`   
   自定义日志记录器要实现的接口
+
+## UnityEngine.UI
+
+### Class
+
+* `UnityEngine.UI.VertexHelper`
