@@ -12,7 +12,7 @@ namespace exercise9000011
         public static void Open()
         {
             Debug.Log(0);
-            var abm = BuildPipeline.BuildAssetBundles(Application.dataPath + "/Exercises/Exercise9000011/abs", BuildAssetBundleOptions.UncompressedAssetBundle|BuildAssetBundleOptions.ForceRebuildAssetBundle, BuildTarget.StandaloneWindows64);
+            var abm = BuildPipeline.BuildAssetBundles(Application.dataPath + "/Exercises/Exercise9000011/abs", BuildAssetBundleOptions.UncompressedAssetBundle|BuildAssetBundleOptions.ForceRebuildAssetBundle|BuildAssetBundleOptions.DeterministicAssetBundle, BuildTarget.StandaloneWindows64);
             foreach (var item in abm.GetAllDependencies("prefabs/man"))
             {
                 Debug.Log(item);
