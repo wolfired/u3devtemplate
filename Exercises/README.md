@@ -12,3 +12,4 @@
 * [Exercise9000008](./Exercise9000008/README.md): 运行时脚本初始化
 * [Exercise9000009](./Exercise9000009/README.md): `GameObject` 下的 `Component` 之间通信
 * [Exercise9000010](./Exercise9000010/README.md): 程序生成网格
+* [Exercise9000011](./Exercise9000011/README.md): 打包资源包
