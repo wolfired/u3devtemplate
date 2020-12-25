@@ -1,7 +1,8 @@
 # `Exercise Menu`
 
-* [Exercise0000000](Exercise0000000/README.md): 指定 `Exercises` 的开关宏
+* [Exercise0000000](./Exercise0000000/README.md): 指定 `Exercises` 的开关宏
 * [Exercise0001001](./Exercise0001001/README.md): 自定义编辑器
+* [Exercise0002001](./Exercise0002001/README.md): 着色器
 * [Exercise9000001](./Exercise9000001/README.md): 通过程序锁定 `Inspector` 窗口
 * [Exercise9000002](./Exercise9000002/README.md): [增加随机游戏元素](https://docs.unity3d.com/Manual/RandomNumbers.html)
 * [Exercise9000003](./Exercise9000003/README.md): 事件
